@@ -1,0 +1,27 @@
+/* ----------------------
+Drop Down CSS
+---------------------- */
+
+.container { 
+  max-width: 1300px;
+} 
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar-inverse {
+    background-color: #043669;
+    border-color: none;
+    border-radius: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+}
+
