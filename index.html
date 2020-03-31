@@ -13,12 +13,14 @@
     
     <link rel="stylesheet" type="text/css" href="css/styles2.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/modal.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script src="js/contact.php"></script>
+
       
     <!-- Smooth parallax scrolling -->  
     <script>
@@ -80,6 +82,7 @@
 
 <!-- Section 2 -->
     <div class="section2 clearfix" id="section2">
+        <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
         <div class="section2-header">
             <h1>THE <b><span>SERVICES</span></b> I OFFER</h1>
         </div>      
@@ -118,16 +121,17 @@
                     <div class="row-item">
                         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
                     </div>          
-            </div>  
+            </div> 
+            </div> 
      </div>
 
 <!-- Section 3 -->
     <div class="section3 clearfix" id="section3">
         <div class="section3-row">
-            <div class="section3-row-item">
+            <div class="section3-row-item" data-aos="fade-right" data-aos-duration="3300" data-aos-once="false">
                 <img src="project/img/about.jpg">
             </div>
-            <div class="section3-row-item">        
+            <div class="section3-row-item" data-aos="fade-left" data-aos-duration="3300" data-aos-once="false">        
                 <h1>Hello, I am Robert Hopkins...</h1>
                 <p>I'm a front-end developer with a strong graphic design background. I spent the last 14 years working for an interactive agency called L2 Interactive. At L2, I was the lead designer for web design concepts and email marketing. Recently, I directed my focus from web design to front-end web development which includes creating web interaction, user experience and bringing websites to life through HTML, CSS, JavaScript, JQuery and PHP. </p>
                 <button class="button button1"><a href="#section5">VIEW MY WORKS</a></button>
@@ -138,28 +142,28 @@
 <!-- Section 4 -->
         <div class="section4 clearfix">    
             <div class="row1">
-                    <div class="row-item">
+                    <div class="row-item" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="150" data-aos-once="false">
                         <div class="chart-percentage">
                             <h1>95<span>%</span></h1>
                         </div>
                         <div class="percentage-description">WEB DESIGN</div>
                     </div>                    
                  
-                    <div class="row-item">
+                    <div class="row-item" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="250" data-aos-once="false">
                         <div class="chart-percentage">
                             <h1>80<span>%</span></h1>
                         </div>
                         <div class="percentage-description">WEB DEVELOPMENT</div>
                     </div>
                 
-                    <div class="row-item">
+                    <div class="row-item" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="350" data-aos-once="false">
                         <div class="chart-percentage">
                             <h1>80<span>%</span></h1>
                         </div>
                         <div class="percentage-description">EMAIL MARKETING</div>
                     </div>  
                 
-                    <div class="row-item">
+                    <div class="row-item" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="450" data-aos-once="false">
                         <div class="chart-percentage">
                             <h1>80<span>%</span></h1>
                         </div>
@@ -195,6 +199,8 @@
 
         <!-- Section 7 -->                        
            <div class="section7 clearfix" id="section7">
+            <div class="bottom-gradient"></div>
+            <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
                 <div class="section7-header">
                     <h1>KEEP IN <b><span>TOUCH</span></b> WITH ME</h1>
                 </div>
@@ -202,7 +208,7 @@
                 <div class="section7-row">
                     <div class="section7-row-item">        
                         <p>If you would like to contact me, please fill out the following form, call/email me directly and I will be happy to get back to you.</p>
-                     <button class="form-button form-button1" href="mailto:hopkins511@yahoo.com"><i class="fa fa-paper-plane"></i>Send Message</button> 
+                     <form action="mailto:hopkins511@yahoo.com"><button class="form-button form-button1"><i class="fa fa-paper-plane"></i>Send Message</button></form>
                      <p>Robert Hopkins<br>hopkins511@yahoo.com<br>847.927.1395</p>
                     </div>
 
@@ -219,9 +225,11 @@
                         <button class="form-button form-button1" type="submit" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button>   
                     </form>
                 </div> -->
-                </div>         
+                </div>  
+                </div>       
             </div>       
-                        
+           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>AOS.init();</script>       
 
     </body>
     <footer></footer>
