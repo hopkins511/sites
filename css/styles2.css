@@ -135,9 +135,10 @@ Section 2
 }
 
 .row-item {
-    width: 25%;
+    width: 50%;
     float: left;
     line-height: 24px;
+    padding: 0 40px;
 }
 
 .row-item h1 {
@@ -251,6 +252,12 @@ Section 4
     padding-top: 100px;
     max-width: 1100px;
     
+}
+
+.row-item-percent {
+    width: 25%;
+    float: left;
+    line-height: 24px;
 }
 
 .chart-percentage {
@@ -738,7 +745,8 @@ Media Queries
         margin-bottom: 60px;
     }
 
-    .row-item {
+    .row-item,
+    .row-item-percent {
         width: 100%;
     }
 
