@@ -39,7 +39,7 @@ h2 {
 	font-size: 1.25em;
  	margin: -15px 0 0;
 	color: #fff;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .clearfix {
@@ -457,7 +457,7 @@ textarea,
 select {
     border: none;
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 300;
     height: auto;
     margin: 0;
     outline: 0;
@@ -475,7 +475,7 @@ select {
     color: #FFF;
     background-color: #74c7d5;
     font-size: 30px;
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
     border: none;
     -webkit-transition-duration: 0.4s; /* Safari */
