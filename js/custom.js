@@ -3,10 +3,14 @@ $(document).ready(function(){
     $('#i-nav').click(function(){
         
         $(this).toggleClass('open');
-        $('ul').toggleClass('show');
+        $('ul').slideToggle(200);
+        $('.hamburger-bar-top').toggleClass('hamburger-change-top');
+        $('.hamburger-bar-middle').toggleClass('hamburger-change-middle');
+        $('.hamburger-bar-bottom').toggleClass('hamburger-change-bottom');
 
     });
 });
+
 
 // Dropdown Menu Fade    
 jQuery(document).ready(function(){
