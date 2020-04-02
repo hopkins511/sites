@@ -262,11 +262,18 @@ Section 4
 
 .chart-percentage {
     display: block;
-    text-align: center;   
+    text-align: center; 
+    background: url('../project/img/chart_80.jpg') top center no-repeat;
+    height: 172px;  
+    padding: 36px 0 0 0;
+}
+
+.ninty-five {
+   background: url('../project/img/chart_90.jpg') top center no-repeat;
 }
 
 .chart-percentage {
-    background-color: #fff;
+/*    background-color: #fff;
     border-radius: 50%;
     border-style: solid;
     border-color: #74c7d5;
@@ -275,7 +282,7 @@ Section 4
     width: 162px;
     height: 162px;
     font-size: 50px;
-    margin: 0 auto;    
+    margin: 0 auto;    */
 }
 
 .chart-percentage h1 {
