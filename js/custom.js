@@ -4,6 +4,7 @@ $(document).ready(function(){
         
         $(this).toggleClass('open');
         $('ul').slideToggle(200);
+        $('ul').toggleClass('show');
         $('.hamburger-bar-top').toggleClass('hamburger-change-top');
         $('.hamburger-bar-middle').toggleClass('hamburger-change-middle');
         $('.hamburger-bar-bottom').toggleClass('hamburger-change-bottom');
