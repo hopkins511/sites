@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.25em;
+	font-size: 1.125em;
  	margin: -15px 0 0;
 	color: #fff;
     font-weight: 300;
@@ -76,7 +76,7 @@ Section 1
 
 .designerBox {
 	width: 870px;
-    margin: 230px auto 0;
+    margin: 220px auto 0;
 	background: #fff;
     background:rgba(255,255,255,0.9);
     padding: 10px 10px;
@@ -519,7 +519,7 @@ Navigation
 nav {
   text-align: center;
   padding: 10px 0;
-  margin: 15px 60px;
+  margin: 15px 60px 15px 10px;
   font-size: .8em;
   float: right;
   z-index: 111;
@@ -888,7 +888,7 @@ Media Queries
 
 
 
-@media (min-width: 1000px) {
+@media (min-width: 1001px) {
 	
 	#i-nav {
 	   display: none;
@@ -901,6 +901,14 @@ Media Queries
 	
 }
 
+@media (max-width: 1020px) {
+
+    nav {
+        font-size: 0.75em;
+    }
+    
+    
+}
 
 
 
