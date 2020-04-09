@@ -790,6 +790,7 @@ Media Queries
 
     .row-item p {
         text-align: center;
+        font-size: 17px;
     }
     
     .row2 {
