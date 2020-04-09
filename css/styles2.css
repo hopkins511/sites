@@ -272,6 +272,10 @@ Section 4
    background: url('../project/img/chart_90.jpg') top center no-repeat;
 }
 
+.hundred {
+   background: url('../project/img/chart_100.jpg') top center no-repeat;
+}
+
 .chart-percentage {
 /*    background-color: #fff;
     border-radius: 50%;
