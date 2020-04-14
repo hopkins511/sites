@@ -281,19 +281,6 @@ Section 4
    background: url('../project/img/chart_100.jpg') top center no-repeat;
 }
 
-.chart-percentage {
-/*    background-color: #fff;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: #74c7d5;
-    border-width: 10px;
-    padding: 18px 0 0 0;
-    width: 162px;
-    height: 162px;
-    font-size: 50px;
-    margin: 0 auto;    */
-}
-
 .chart-percentage h1 {
     font-size: 50px;
     color: #368ca8;
@@ -671,12 +658,34 @@ Inside pages
     cursor: pointer;
 }
 
+.visitButton a { 
+  color: #fff !important;
+}
+
+.visitButton a:hover { 
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
 .visitButton i {
     padding-right: 15px;
 }
 
 .visitButton1:hover {
     opacity: .5;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 10% !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
 
