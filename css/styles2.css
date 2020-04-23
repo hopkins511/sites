@@ -795,6 +795,10 @@ Media Queries
         margin-bottom: 60px;
     }
 
+    .row-item {
+        padding: 0 20px;
+    }
+
     .row-item,
     .row-item-percent {
         width: 100%;
