@@ -648,7 +648,7 @@ Inside pages
 }
 
 .visitButton {
-    padding: 17px 60px;
+    padding: 16px 40px;
     color: #FFF;
     background-color: #74c7d5;
     font-size: 25px;
@@ -679,6 +679,7 @@ Inside pages
 .carousel-control-next,
 .carousel-control-prev {
     width: 10% !important;
+    margin-top: -150px !important;
 }
 
 .carousel-control-prev-icon {
