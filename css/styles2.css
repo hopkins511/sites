@@ -679,7 +679,7 @@ Inside pages
 .carousel-control-next,
 .carousel-control-prev {
     width: 10% !important;
-    margin-top: -150px !important;
+    padding-bottom: 70px;
 }
 
 .carousel-control-prev-icon {
