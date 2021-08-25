@@ -44,7 +44,7 @@
     width: 1em;
     height: 1em;
     clip: rect(0em, 0.5em, 1em, 0em);
-    border-radius: 0.5em;
+    border-radius: 100%;
 }
 
 li.design .piesite > #slice > .pie {
@@ -64,11 +64,11 @@ li.design .piesite > #slice > .pie {
     content: '';
     display: block;
     position: absolute;
-    top: .1em;
-    left: .1em;
-    width: .8em;
-    height: .8em;
-    background: transparent;
+    top: .07em;
+    left: .07em;
+    width: .86em;
+    height: .86em;
+    background: white;
     border-radius: 100%;
     z-index: 1;
 }
@@ -79,13 +79,12 @@ li.design .piesite > #slice > .pie {
     position: absolute;
     width: 1em;
     height: 1em;
-    border-radius: .5em;
-    opacity: .5;
+    border-radius: 100%;
     z-index: 0;
 }
 
 .piesite:before {
-    background: rgba(255, 255, 255, 0.1);
+    background: #f9f9f9;
 }
 
 .box-piesite ul.pie-list {
