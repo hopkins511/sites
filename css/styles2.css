@@ -300,31 +300,6 @@ Section 4
 }
 
 /* ----------------------
-Section 5
----------------------- */
-
-.section5 {
-    margin: 0 auto;
-    padding-bottom: 80px;
-    padding-top: 80px;
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #dddddd;
-    border-top: 1px solid #dddddd;
-}
-
-.section5-header h1 {
-    color: #228ca8;
-    font-size: 50px;
-    font-weight: 300;
-    text-align: center;
-
-}
-
-.section5-header span {
-    font-size: 72px;
-}
-
-/* ----------------------
 Section 6
 ---------------------- */
 
@@ -527,7 +502,7 @@ nav li:hover a {
     color: #20c4f4;
 }
 
-nav ul {
+nav ul.nav-list {
   list-style: none;
   padding: 0; 
 }
@@ -753,7 +728,7 @@ Media Queries
         width: 100%;
     }
     
-    ul {
+    ul.nav-list {
         display: none;
         text-align: left;
         box-shadow: 0 10px 6px -6px #333;
@@ -761,19 +736,19 @@ Media Queries
     }
 
     
-    ul li {
+    ul.nav-list li {
       width: 100%;
       padding: 0 20px 20px;
       text-align: left;
     }
     
-    ul li a {
+    ul.nav-list li a {
         text-align: center;
         padding: 0px;
         color: #20c4f4 !important;
     }
     
-    ul li a:hover {
+    ul.nav-list li a:hover {
         opacity: .6 !important;
     }
 
@@ -943,11 +918,3 @@ Media Queries
     
     
 }
-
-
-
-
-
-
-
-
