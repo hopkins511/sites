@@ -84,7 +84,7 @@ Section 1
     background:rgba(255,255,255,0.9);
     padding: 10px 10px;
     text-align: center;
-    color: #74c7d5;
+    color: #20c4f4;
     position: relative;
     z-index: 3;
 }
@@ -109,7 +109,7 @@ Section 2
 }
 
 .section2-header h1 {
-    color: #74c7d5;
+    color: #20c4f4;
     font-size: 50px;
     font-weight: 300;
     text-align: center;
@@ -147,7 +147,7 @@ Section 2
 .row-item h1 {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
-    color: #74c7d5;
+    color: #20c4f4;
     font-weight: 400;
     padding-top: 5px;
 }
@@ -169,7 +169,7 @@ Section 2
     background-color: #fff;
     border-radius: 50%;
     border-style: solid;
-    border-color: #74c7d5;
+    border-color: #20c4f4;
     border-width: 10px;
     padding: 34px 0 0 0;
     width: 162px;
@@ -184,7 +184,7 @@ Section 3
 
 .section3 {
     margin: 0 auto;
-    background-color: #74c7d5;
+    background-color: #20c4f4;
 }
 
 .section3-row {
@@ -219,7 +219,7 @@ Section 3
 
 .section3-row-item img {
     border-radius: 50%;
-    border: 18px solid #9ed8e2;
+    border: 18px solid rgba(255, 255, 255, 0.5);
 }
 
 .button {
@@ -245,7 +245,7 @@ Section 3
 }
 
 .button1:hover a {
-    color: #74c7d5;
+    color: #20c4f4;
 }
 
 /* ----------------------
@@ -284,7 +284,7 @@ Section 4
 
 .chart-percentage h1 {
     font-size: 50px;
-    color: #368ca8;
+    color: #20c4f4;
 }
 
 .chart-percentage span {
@@ -292,7 +292,7 @@ Section 4
 }
 
 .percentage-description {
-    color: #368ca8;
+    color: #20c4f4;
     font-size: 20px; 
     margin: 30px 0;
     text-align: center;
@@ -345,7 +345,7 @@ Section 6
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    background: #74c7d5;
+    background: #20c4f4;
     position: relative;
 }
 
@@ -462,7 +462,7 @@ select {
     padding: 15px;
     width: 100%;
     background:rgba(255,255,255,0.9);
-    color: #74c7d5;
+    color: #20c4f4;
     margin-bottom: 30px;
     resize: none;
 }
@@ -471,7 +471,7 @@ select {
     margin: 0 auto;
     padding: 19px 39px 18px 29px;
     color: #FFF;
-    background-color: #74c7d5;
+    background-color: #20c4f4;
     font-size: 30px;
     font-weight: 300;
     text-align: center;
@@ -487,7 +487,7 @@ select {
 
 .form-button1:hover {
     background-color: #fff;
-    color: #74c7d5;
+    color: #20c4f4;
 }
 
 fieldset {
@@ -524,7 +524,7 @@ nav {
 }
 
 nav li:hover a {
-    color: #74c7d5;
+    color: #20c4f4;
 }
 
 nav ul {
@@ -561,7 +561,7 @@ nav a {
 .hamburger-bar {
     height: 4px;
     width: 30px;
-    background-color: #74c7d5;
+    background-color: #20c4f4;
     display: block;
     margin: 5px 0;
     opacity: 1;
@@ -599,7 +599,7 @@ Inside pages
 }
 
 .insideTop {
-    border-bottom: 1px solid #74c7d5;
+    border-bottom: 1px solid #20c4f4;
     padding-bottom: 40px;
 }
 
@@ -610,7 +610,7 @@ Inside pages
 }
 
 .insideTop i:hover {
-    color: #74c7d5;
+    color: #20c4f4;
 }
 
 .computer {
@@ -623,7 +623,7 @@ Inside pages
 }
 
 .projectTitle {
-    color: #74c7d5;
+    color: #20c4f4;
     text-align: center;
     font-size: 32px;
     text-transform: uppercase;
@@ -650,7 +650,7 @@ Inside pages
 .visitButton {
     padding: 16px 40px;
     color: #FFF;
-    background-color: #74c7d5;
+    background-color: #20c4f4;
     font-size: 25px;
     font-weight: 300;
     border: none;
@@ -708,12 +708,12 @@ Media Queries
         }
 
     h1 {
-        color: #74c7d5;
+        color: #20c4f4;
         font-size: 1.5em;
     }
 
     h2 {
-        color: #74c7d5;
+        color: #20c4f4;
         font-size: 1.1em;
         padding: 2px 0;
     }    
@@ -770,7 +770,7 @@ Media Queries
     ul li a {
         text-align: center;
         padding: 0px;
-        color: #74c7d5 !important;
+        color: #20c4f4 !important;
     }
     
     ul li a:hover {
