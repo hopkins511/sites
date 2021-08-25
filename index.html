@@ -12,6 +12,7 @@
     <!-- CSS -->
     
     <link rel="stylesheet" type="text/css" href="css/styles2.css">
+    <link rel="stylesheet" type="text/css" href="css/pie_chart.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
@@ -19,6 +20,7 @@
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/graph_animation.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163606416-1"></script>
@@ -71,7 +73,7 @@
                 <h2>Front-End Web Developer & Designer</h2>
             </div>        
             <nav>
-                <ul>
+                <ul class="nav-list">
                     <li><a href="#section2">What I do</a></li>
                     <li><a href="#section3">About Me</a></li>
                     <li><a href="#section7">Contact Me</a></li> 
@@ -147,7 +149,7 @@
     </div>
 
 <!-- Section 4 -->
-        <div class="section4 clearfix">    
+        <!-- <div class="section4 clearfix">    
             <div class="row1">
                 <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="150" data-aos-once="false">
                     <div class="chart-percentage hundred">
@@ -174,6 +176,51 @@
                         <h1>80<span>%</span></h1>
                     </div>
                     <div class="percentage-description">USER EXPERIENCE</div>
+                </div>  
+            </div>
+        </div> -->
+
+        <div class="section4 clearfix">    
+            <div class="row1">
+                <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="150" data-aos-once="false">
+                    <div class="box-piesite">
+                        <ul class="pie-list">
+                            <li class="design">
+                                <div class="piesite" id="pie_0" data-pie="100"></div>
+                                <div class="percentage-description">WEB DESIGN</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+                <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="250" data-aos-once="false">
+                    <div class="box-piesite">
+                        <ul class="pie-list">
+                            <li class="design">
+                                <div class="piesite" id="pie_1" data-pie="80"></div>
+                                <div class="percentage-description">WEB DEVELOPMENT</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+                <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="350" data-aos-once="false">
+                    <div class="box-piesite">
+                        <ul class="pie-list">
+                            <li class="design">
+                                <div class="piesite" id="pie_2" data-pie="80"></div>
+                                <div class="percentage-description">EMAIL MARKETING</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+                <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="450" data-aos-once="false">
+                    <div class="box-piesite">
+                        <ul class="pie-list">
+                            <li class="design">
+                                <div class="piesite" id="pie_3" data-pie="80"></div>
+                                <div class="percentage-description">USER EXPERIENCE</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>  
             </div>
         </div>
