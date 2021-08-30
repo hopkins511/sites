@@ -825,7 +825,8 @@ Media Queries
 
 
     .section1 {
-        height: 750px;       
+        height: 750px;
+        background: url('../project/img/header_bg.jpg') no-repeat center center;
     }
 
     .top-gradient {
@@ -955,7 +956,7 @@ Media Queries
     span.typed-cursor {
         font-size: 27px;
     }
-     
+
     .button {
         font-size: 15px;
         padding: 12px 26px;
