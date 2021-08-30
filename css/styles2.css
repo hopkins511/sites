@@ -61,8 +61,10 @@ Section 1
 
 .section1 {
     background: url('../project/img/header_bg.jpg') no-repeat center center fixed;
-  	background-size: cover;
-    /* height: 1113px; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     margin: 0 auto;
     position: relative;
     padding-bottom: 50px;
