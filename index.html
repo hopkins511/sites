@@ -142,44 +142,22 @@
                 <img src="project/img/about.jpg">
             </div>
             <div class="section3-row-item" data-aos="fade-left" data-aos-duration="3300" data-aos-once="false">        
-                <h1>Hello, I am Robert Hopkins...</h1>
-                <p>I am a Digital Designer at All Campus. All Campus is ranked one of the top companies in Chicago. My primary roles at All Campus include designing and developing microsites, landing pages, marketing/social media banners, email marketing, brochures and A/B testing. I have been in the web industry for 15 years. Early in my career, I was the lead web designer and front-end developer for L2 Interactive which includes producing HTML, CSS, JavaScript, JQuery and content management for Corporate and Performing Arts clients.</p>
+                <div class="animated-text-container">
+                <span style="font-size:36px">I'm a </span>
+                <div id="typed-strings">
+                    <span>Digital Designer</span>
+                    <span>Web Designer</span>
+                    <span>Graphic Designer</span>
+                    <span>Front-End Developer</span>
+                  </div>
+                  <span id="typed"></span>
+                </div>
+                <p>Hi! My name is Robert Hopkins and I am a Digital Designer at All Campus. All Campus is ranked one of the top companies in Chicago. My primary roles at All Campus include designing and developing microsites, landing pages, marketing/social media banners, email marketing, brochures and A/B testing. I have been in the web industry for 15 years. </p>
             </div>
         </div>        
     </div>
 
 <!-- Section 4 -->
-        <!-- <div class="section4 clearfix">    
-            <div class="row1">
-                <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="150" data-aos-once="false">
-                    <div class="chart-percentage hundred">
-                        <h1>100<span>%</span></h1>
-                    </div>
-                    <div class="percentage-description">WEB DESIGN</div>
-                </div>  
-                <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="250" data-aos-once="false">
-                    <div class="chart-percentage">
-                        <h1>80<span>%</span></h1>
-                    </div>
-                    <div class="percentage-description">WEB DEVELOPMENT</div>
-                </div>
-
-                <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="350" data-aos-once="false">
-                    <div class="chart-percentage">
-                        <h1>80<span>%</span></h1>
-                    </div>
-                    <div class="percentage-description">EMAIL MARKETING</div>
-                </div>  
-            
-                <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="450" data-aos-once="false">
-                    <div class="chart-percentage">
-                        <h1>80<span>%</span></h1>
-                    </div>
-                    <div class="percentage-description">USER EXPERIENCE</div>
-                </div>  
-            </div>
-        </div> -->
-
         <div class="section4 clearfix">    
             <div class="row1">
                 <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="150" data-aos-once="false">
@@ -243,6 +221,17 @@
                 </div>       
             </div>       
            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+           <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+           <script>
+            var typed = new Typed('#typed', {
+              stringsElement: '#typed-strings',
+              typeSpeed: 23,
+              backSpeed: 23,
+              backDelay: 2000,
+              loop: true,
+              loopCount: Infinity,
+            });
+          </script>
            <script>AOS.init();</script>       
 
     </body>
