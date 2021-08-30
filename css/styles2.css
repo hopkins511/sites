@@ -250,6 +250,20 @@ Section 3
     color: #20c4f4;
 }
 
+.animated-text-container {
+    text-align: left;
+}
+
+span#typed {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+span.typed-cursor {
+    font-size: 36px;
+    font-weight: 300;
+}
+
 /* ----------------------
 Section 4
 ---------------------- */
@@ -821,6 +835,10 @@ Media Queries
         text-align: center;
         margin-top: 0;    
     }
+
+    .animated-text-container {
+        text-align: center;
+    }
      
     .button {
         font-size: 15px;
@@ -834,7 +852,6 @@ Media Queries
         padding-bottom: 40px;
         padding-top: 20px;
         font-size: 15px;
-        
     }
     
     .gallery-row-item {
