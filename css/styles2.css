@@ -254,6 +254,10 @@ Section 3
     text-align: left;
 }
 
+span.iam {
+    font-size: 36px;
+}
+
 span#typed {
     font-size: 36px;
     font-weight: 400;
@@ -838,6 +842,12 @@ Media Queries
 
     .animated-text-container {
         text-align: center;
+    }
+
+    span.iam,
+    span#typed,
+    span.typed-cursor {
+        font-size: 27px;
     }
      
     .button {
