@@ -59,7 +59,9 @@ h2 {
 Section 1
 ---------------------- */
 
-.section1 {
+/* Static Image background */
+
+/* .section1 {
     background: url('../project/img/header_bg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -68,25 +70,39 @@ Section 1
     margin: 0 auto;
     position: relative;
     padding-bottom: 50px;
-}
+} */
 
-.top-gradient {
-    height: 753px;
-    background-color: black;
-    width: 100%;
+#myVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    max-height: 800px;
+    max-width: 100%;
     position: absolute;
     top: 0;
-    right: 0;
-    z-index: 0;
-    opacity: 0.3;
+    left: 0;
+    overflow: hidden;
+  }
+
+.top-gradient {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    max-height: 800px;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .designerBox {
 	width: 870px;
-    margin: 130px auto 100px;
+    margin: 130px auto 50px;
 	background: #fff;
     background:rgba(255,255,255,0.9);
-    padding: 10px 10px;
+    padding: 0 10px;
     text-align: center;
     color: #20c4f4;
     position: relative;
@@ -104,13 +120,12 @@ Section 1
 }
 
 .scroll-downs {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
     margin: auto;
     width: 34px;
     height: 55px;
+    z-index: 10;
+    bottom: 20px;
+    position: relative;
 }
 
 .mousey {
@@ -130,7 +145,7 @@ Section 1
     background-color: #fff;
     animation-name: scroll;
     animation-duration: 2.2s;
-    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
     animation-iteration-count: infinite;
 }
 
@@ -148,6 +163,7 @@ Section 2
     margin: 0 auto;
     padding-bottom: 100px;
     overflow: hidden;
+    background-color: #fff;
 }
 
 .section2-header h1 {
@@ -822,15 +838,29 @@ Media Queries
         padding: 2px 0;
     }    
 
-
-
-    .section1 {
+    /* .section1 {
         height: 750px;
         background: url('../project/img/header_bg.jpg') no-repeat center center;
-    }
+    } */
+
+    #myVideo {
+        object-fit: cover;
+        width: 100vw;
+        height: 620px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+      }
 
     .top-gradient {
-        height: 750px;
+        object-fit: cover;
+        width: 100vw;
+        height: 620px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
     }
 
     .designerBox { 
@@ -842,8 +872,8 @@ Media Queries
         }
 
     .box-text span {
-           font-size: 40px; 
-        }
+      font-size: 36px; 
+    }
 
     
   /*  ---------- */
