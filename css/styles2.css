@@ -72,6 +72,10 @@ Section 1
     padding-bottom: 50px;
 } */
 
+.section1 {
+    height: 760px;
+}
+
 .top-gradient {
     background-color: rgba(0, 0, 0, 0.3);
     object-fit: cover;
@@ -167,7 +171,7 @@ Section 2
     font-weight: 300;
     text-align: center;
     margin-top: 130px;
-    margin-bottom: 110px; 
+    margin-bottom: 70px; 
 }
 
 .section2-header span {
@@ -837,6 +841,10 @@ Media Queries
         height: 750px;
         background: url('../project/img/header_bg.jpg') no-repeat center center;
     } */
+
+    .section1 {
+        height: 620px;
+    }
 
     #myVideo {
         object-fit: cover;
