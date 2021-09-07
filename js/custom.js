@@ -68,13 +68,12 @@ $( document ).ready(function() {
 
 });
 
-$(window).load(function() {
+$(document).ready(function() {
 	$(".loader").delay(2000).fadeOut("slow");
-	  $("#overlayer").delay(2000).fadeOut("slow");
-})
+	$("#overlayer").delay(2000).fadeOut("slow");
 
-setTimeout(
-	function() 
-	{
-		$("body").css("overflow", "inherit");
-	}, 2000);
+	setTimeout(function() {
+		$('body').addClass('loaded');
+		
+	  }, 2000);
+});
