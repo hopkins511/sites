@@ -411,8 +411,7 @@ Section 4
 }
 
 .row-item-percent {
-    width: 25%;
-    float: left;
+    width: 100%;
     line-height: 24px;
 }
 
