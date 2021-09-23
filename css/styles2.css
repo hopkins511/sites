@@ -180,7 +180,7 @@ Section 1
 
 .designerBox {
 	width: 870px;
-    margin: 130px auto 50px;
+    margin: 130px auto 90px;
 	background: #fff;
     background:rgba(255,255,255,0.9);
     padding: 0 10px;
@@ -909,13 +909,13 @@ Media Queries
     }    
 
     .section1 {
-        height: 620px;
+        height: 700px;
     }
 
     #myVideo {
         object-fit: cover;
         width: 100vw;
-        height: 620px;
+        height: 700px;
         position: absolute;
         top: 0;
         left: 0;
@@ -925,7 +925,7 @@ Media Queries
     .top-gradient {
         object-fit: cover;
         width: 100vw;
-        height: 620px;
+        height: 700px;
         position: absolute;
         top: 0;
         left: 0;
