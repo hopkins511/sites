@@ -41,10 +41,10 @@ h1 {
 }
 
 h2 {
-	font-size: 1.125em;
+	font-size: 17px;
  	margin: -15px 0 0;
 	color: #fff;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .clearfix {
@@ -191,8 +191,8 @@ Section 1
 }
 
 .box-text {
-	font-size: 48px;
-    font-weight: 300;
+    font-size: 45px;
+    font-weight: 400;
 }
 
 .box-text span {
@@ -248,8 +248,8 @@ Section 2
 
 .section2-header h1 {
     color: #20c4f4;
-    font-size: 50px;
-    font-weight: 300;
+    font-size: 44px;
+    font-weight: 400;
     text-align: center;
     margin-top: 130px;
     margin-bottom: 70px; 
@@ -342,9 +342,9 @@ Section 3
 
 .section3-row-item p {
     text-align: left;
-    font-size: 25px;
-    line-height: 36px;
-    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
     margin-top: 10px;
 }
 
@@ -413,31 +413,6 @@ Section 4
 .row-item-percent {
     width: 100%;
     line-height: 24px;
-}
-
-.chart-percentage {
-    display: block;
-    text-align: center; 
-    background: url('../project/img/chart_80.jpg') top center no-repeat;
-    height: 172px;  
-    padding: 36px 0 0 0;
-}
-
-.ninty-five {
-   background: url('../project/img/chart_90.jpg') top center no-repeat;
-}
-
-.hundred {
-   background: url('../project/img/chart_100.jpg') top center no-repeat;
-}
-
-.chart-percentage h1 {
-    font-size: 50px;
-    color: #20c4f4;
-}
-
-.chart-percentage span {
-    font-size: 36px;
 }
 
 .percentage-description {
@@ -530,8 +505,8 @@ Section 7
 
 .section7-header h1 {
     color: #fff;
-    font-size: 50px;
-    font-weight: 300;
+    font-size: 44px;
+    font-weight: 400;
     text-align: center;
     margin-top: 130px;
     margin-bottom: 10px; 
@@ -553,15 +528,15 @@ Section 7
 .section7-row-item {
     text-align: center;
     color: #fff;
-    margin: 30px 90px 90px;
+    margin: 30px 100px 90px;
     line-height: 36px;
 }
 
 .section7-row-item p {
     text-align: center;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 30px;
-    font-weight: 300;
+    font-weight: 400;
     padding: 0 10px;
     display: block;
 }
@@ -575,31 +550,13 @@ Section 7
     margin: 0 15px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea,
-select {
-    border: none;
-    font-size: 30px;
-    font-weight: 300;
-    height: auto;
-    margin: 0;
-    outline: 0;
-    padding: 15px;
-    width: 100%;
-    background:rgba(255,255,255,0.9);
-    color: #20c4f4;
-    margin-bottom: 30px;
-    resize: none;
-}
-
 .form-button {
     margin: 0 auto;
     padding: 19px 39px 18px 29px;
     color: #FFF;
     background-color: #20c4f4;
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 400;
     text-align: center;
     border: none;
     -webkit-transition-duration: 0.4s; /* Safari */
@@ -817,7 +774,7 @@ Inside pages
     text-align: center;
     font-size: 32px;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 40px;
 }
 
@@ -827,7 +784,7 @@ Inside pages
     text-align: center;
     font-size: 19px;
     line-height: 29px;
-    font-weight: 300;
+    font-weight: 400;
     max-width: 866px;
     padding: 20px 0 30px 0;
 }
@@ -842,7 +799,7 @@ Inside pages
     color: #FFF;
     background-color: #20c4f4;
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 400;
     border: none;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
