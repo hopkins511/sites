@@ -838,29 +838,6 @@ Inside pages
 }
 
 /* ----------------------
-Thank You
----------------------- */
-
-.thank-you-section {
-    background-image: url('../project/img/stats1.jpg'); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    position: relative;
-    padding-top: 150px;
-}
-
-.thank-you-container {
-    margin: auto;
-    text-align: center;
-}
-
-.full-height {
-    height: 100%;
-}
-
-/* ----------------------
 Media Queries
 ---------------------- */
 
