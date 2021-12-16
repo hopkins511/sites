@@ -837,6 +837,28 @@ Inside pages
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
+/* ----------------------
+Thank You
+---------------------- */
+
+.thank-you-section {
+    background-image: url('../project/img/stats1.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    padding-top: 150px;
+}
+
+.thank-you-container {
+    margin: auto;
+    text-align: center;
+}
+
+.full-height {
+    height: 100%;
+}
 
 /* ----------------------
 Media Queries
