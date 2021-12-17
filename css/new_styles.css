@@ -857,4 +857,8 @@ Media Queries
     .animated-text-container {
         margin-top: 10px;
     }
+
+    .thank-you-section {
+        padding-top: 5px;
+    }
 }
