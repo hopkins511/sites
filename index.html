@@ -10,17 +10,20 @@
     
     
     <!-- CSS -->
-    
-    <link rel="stylesheet" type="text/css" href="css/styles2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/new_styles.css">
     <link rel="stylesheet" type="text/css" href="css/pie_chart.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="project/img/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="project/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="project/img/favicon-96x96.png" sizes="96x96">
       
     <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/graph_animation.js"></script>
@@ -35,125 +38,173 @@
 
       gtag('config', 'UA-163606416-1');
     </script>
-
-
-      
-    <!-- Smooth parallax scrolling -->  
-    <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (1000) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 1000, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-    </script>
     
   </head>  
 
 <body>
-    <div id="overlayer"></div>
+    <!-- <div id="overlayer"></div>
     <span class="loader">
         <span class="loader-inner"></span>
-    </span>  
+    </span>   -->
 <!-- Section 1 -->
-    <div class="section1">
+    <div class="section1" id="section1">
         <div class="topBar">
-            <div class="logo">        
-                <h1>ROBERT HOPKINS</h1>
-                <h2>Front-End Web Developer & Designer</h2>
-            </div>        
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="#section2">What I do</a></li>
-                    <li><a href="#section3">About Me</a></li>
-                    <li><a href="#section7">Contact Me</a></li> 
-                    <li><a href="project/Robert_Hopkins_resume.pdf" target="_blank">Resume</a></li> 
-                </ul>         
-            </nav>
-                <div id="i-nav" class="hamburger">
+            <div class="section-container">
+                <div class="logo">        
+                    <h1>R<span class="divider-line">|</span>H</h1>
+                </div>        
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="#section1" class="menu-button">Home</a></li>
+                        <li><a href="#section2" class="menu-button">About</a></li>
+                        <li><a href="#section3" class="menu-button">Services</a></li> 
+                        <li><a href="#section4" class="menu-button">Contact</a></li> 
+                        <li><a href="project/Robert_Hopkins_resume.pdf" target="_blank">Resume</a></li> 
+                    </ul>         
+                </nav>
+            </div>
+            <div id="i-nav" class="hamburger">
                 <span class="hamburger-bar hamburger-bar-top"></span>
                 <span class="hamburger-bar hamburger-bar-middle"></span>
                 <span class="hamburger-bar hamburger-bar-bottom"></span>
             </div>
         </div>
-        
-        <div class="designerBox clearfix">
-            <div class="box-text">		
-                <p><span>FRONT-END</br>WEB DEVELOPER</br></span> &</br> <span>DESIGNER</span></p>        
-            </div>	        
+
+        <div class="hero-container">
+            <div class="profile-pic">
+                <img src="project/img/about.jpg">
+            </div>
+            <h1>Robert<span>Hopkins</span></h1>
+            <div class="animated-text-container">
+                <span class="iam">I'm a </span>
+                <div id="typed-strings">
+                    <span>Digital Designer</span>
+                    <span>Web Designer</span>
+                    <span>Graphic Designer</span>
+                    <span>Front-End Developer</span>
+                </div>
+                <span id="typed"></span>
+            </div>
         </div>
+
         <div class="scroll-downs">
             <div class="mousey">
-              <div class="scroller"></div>
+                <div class="scroller"></div>
             </div>
         </div>
         <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;"  preload="auto"  id="myVideo">
             <source src="project/bg_video2.mp4" type="video/mp4">
-          </video>
-          <div class="top-gradient"></div>
+        </video>
+        <div class="top-gradient"></div>
     </div>
 
 <!-- Section 2 -->
-    <div class="section2 clearfix" id="section2">
+    <div class="section2" id="section2">
         <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
-        <div class="section2-header">
-            <h1>THE <b><div class="line-break"></div><span>SERVICES</span></b><div class="line-break"></div> I OFFER</h1>
-        </div>      
-            <div class="row1">                  
-                    <div class="row-item">
-                        <div class="service-icons">
-                            <i class="fas fa-code" aria-hidden="true"></i><h1>Programming</h1>
-                            <p>Expert in HTML, CSS, Less, Sass, Bootstrap. Intermediate in JavaScript, jQuery, PHP and WordPress.</p>
-                        </div>
-                    </div>  
-                 <div class="row-item">
-                    <div class="service-icons">
-                        <i class="fas fa-mouse-pointer"></i><h1>Software</h1>
-                        <p>Proficient in Adobe Creative Cloud including Photoshop, Illustrator, InDesign and Acrobat.</p>
-                    </div>
-                </div>                     
-
-            </div>
-            <div class="row2">                             
-                   <div class="row-item">
-                        <div class="service-icons">
-                            <i class="fas fa-laptop"></i><h1>Web Design</h1>
-                            <p>15 years experienced with designing responsive websites, wireframing, design concepts, prototyping.</p>
-
-                        </div>
-                    </div>                   
-
-                <div class="row-item">
-                    <div class="service-icons">
-                        <i class="fas fa-envelope"></i><h1>Email Marketing</h1>
-                        <p>Experienced with email marketing, marketing automation, content management and reporting.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section2-header">
+                            <h4 class="section-sub-header">Biography</h4>
+                            <h2 class="section-header">About Me</h2>
+                        </div> 
                     </div>
                 </div>
-      
+            </div>
+        <div class="section2-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="section2-header">
+                            <div class="image-col"><img src="project/img/about_img.jpg" /></div>
+                        </div> 
+                    </div>
+                    <div class="col-md-9">
+                        <div class="text-col">
+                            <h3>I'm Robert Hopkins and I'm a <span class="blue role">Digital Designer</span></h3>
+                            <p>Hi! My name is Robert Hopkins and I am a Digital Designer at AllCampus. AllCampus is ranked one of the top companies in Chicago. My primary roles at AllCampus include designing and developing microsites, landing pages, marketing/social media banners, email marketing, brochures and A/B testing. I have been in the web industry for 15 years. </p>
+                            <div class="row mt-4">
+                                <div class="col-lg-6">
+                                    <p><i class="fas fa-gift"></i><strong>Birthday:</strong> 05.11.1982</p>
+                                    <p><i class="fas fa-map-marker-alt"></i><strong>Location:</strong> Cary, Illinois USA</p>
+                                    <p><i class="fas fa-book-reader"></i><strong>Study:</strong> Northern Illinois University</p>
+                                    <p><i class="fas fa-envelope"></i><strong>Mail:</strong> <a href="mailto:hopkins511@yahoo.com">hopkins511@yahoo.com</a></p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p><i class="far fa-calendar-alt"></i><strong>Age:</strong> 39</p>
+                                    <p><i class="fas fa-bowling-ball"></i><strong>Interest:</strong> Bowling, Working Out</p>
+                                    <p><i class="fas fa-graduation-cap"></i><strong>Degree:</strong> Bachelors Degree</p>
+                                    <p><i class="fas fa-phone"></i><strong>Phone:</strong> <a href="tel:847.927.1395">847.927.1395</a></p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
             </div> 
-            </div> 
-     </div>
+        </div>
+        </div>
+    </div>
 
-         <!-- Section 8 -->                        
-    <div class="section8 clearfix" id="section8">
+    <!-- Section 3 -->
+    <div class="section3 grey-section" id="section3">
+        <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section3-header">
+                            <h4 class="section-sub-header">Services</h4>
+                            <h2 class="section-header">Quality Services</h2>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        <div class="section3-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                    <div class="row1">                  
+                        <div class="row-item">
+                            <div class="service-icons">
+                                <i class="fas fa-code" aria-hidden="true"></i><h4>Programming</h4>
+                                <p>Expert in HTML, CSS, Less, Sass, Bootstrap. Intermediate in JavaScript, jQuery, PHP and WordPress.</p>
+                            </div>
+                        </div>  
+                    <div class="row-item">
+                        <div class="service-icons">
+                            <i class="fas fa-mouse-pointer"></i><h4>Software</h4>
+                            <p>Proficient in Adobe Creative Cloud including Photoshop, Illustrator, InDesign and Acrobat.</p>
+                        </div>
+                    </div>                     
+    
+                </div>
+                <div class="row2">                             
+                        <div class="row-item">
+                            <div class="service-icons">
+                                <i class="fas fa-laptop"></i><h4>Web Design</h4>
+                                <p>15 years experienced with designing responsive websites, wireframing, design concepts, prototyping.</p>
+    
+                            </div>
+                        </div>                   
+    
+                    <div class="row-item">
+                        <div class="service-icons">
+                            <i class="fas fa-paper-plane"></i><h4>Email Marketing</h4>
+                            <p>Experienced with email marketing, marketing automation, content management and reporting.</p>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="mt-5">Are you interested in working with me? <a href="mailto:hopkins511@yahoo.com">Let's start now</a>.</h4>
+                </div> 
+            </div> 
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Section 8 -->                        
+    <div class="section8" id="section8">
         <div class="bottom-gradient"></div>
         <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
             <div class="section8-row">
@@ -176,94 +227,57 @@
             </div>  
             </div>       
         </div>  
-
-<!-- Section 3 -->
-    <div class="section3 clearfix" id="section3">
-        <div class="section3-row">
-            <div class="section3-row-item" data-aos="fade-right" data-aos-duration="3300" data-aos-once="false">
-                <img src="project/img/about.jpg">
-            </div>
-            <div class="section3-row-item" data-aos="fade-left" data-aos-duration="3300" data-aos-once="false">        
-                <div class="animated-text-container">
-                <span class="iam">I'm a </span>
-                <div id="typed-strings">
-                    <span>Digital Designer</span>
-                    <span>Web Designer</span>
-                    <span>Graphic Designer</span>
-                    <span>Front-End Developer</span>
-                  </div>
-                  <span id="typed"></span>
+            
+<!-- Section 4 -->
+    <div class="section4" id="section4">
+        <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section4-header">
+                            <h4 class="section-sub-header">Contact</h4>
+                            <h2 class="section-header">Get in Touch</h2>
+                        </div> 
+                    </div>
                 </div>
-                <p>Hi! My name is Robert Hopkins and I am a Digital Designer at AllCampus. AllCampus is ranked one of the top companies in Chicago. My primary roles at AllCampus include designing and developing microsites, landing pages, marketing/social media banners, email marketing, brochures and A/B testing. I have been in the web industry for 15 years. </p>
             </div>
-        </div>        
+        <div class="section4-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-last col-spacing">
+                        <p><i class="fas fa-envelope"></i><strong>Mail:</strong> <a href="mailto:hopkins511@yahoo.com">hopkins511@yahoo.com</a></p>
+                        <p><i class="fas fa-phone"></i><strong>Phone:</strong> <a href="tel:847.927.1395">847.927.1395</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i><strong>Location:</strong> Cary, Illinois USA</p>
+                    </div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="section4-header">
+                            <p>If you would like to contact me, fill out the form below, call/email me directly and I will be happy to get back to you.</p>
+                        </div>
+                        <form action="https://formsubmit.co/hopkins511@yahoo.com" method="POST">
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="Name" name="name" id="name" required>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://www.roberthopkinsdesign.com/thankyou.html">
+                            <label for="email">Email</label>
+                            <input type="text" placeholder="Email" name="email" id="email" required>
+                            <label for="message">Message</label>
+                            <textarea placeholder="Message" name="message" id="message" rows="10" cols="30" required></textarea>
+                            <button type="submit" class="form-button">Send Message</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div> 
+        </div>
+        </div>
     </div>
 
-  
-
-<!-- Section 4 -->
-        <div class="section4 clearfix">    
-            <div class="row2">
-                <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="150" data-aos-once="false">
-                    <div class="box-piesite">
-                        <ul class="pie-list">
-                            <li class="design">
-                                <div class="piesite" id="pie_0" data-pie="100"></div>
-                                <div class="percentage-description">WEB DESIGN</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>  
-                <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="250" data-aos-once="false">
-                    <div class="box-piesite">
-                        <ul class="pie-list">
-                            <li class="design">
-                                <div class="piesite" id="pie_1" data-pie="90"></div>
-                                <div class="percentage-description">WEB DEVELOPMENT</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>  
-                <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="350" data-aos-once="false">
-                    <div class="box-piesite">
-                        <ul class="pie-list">
-                            <li class="design">
-                                <div class="piesite" id="pie_2" data-pie="80"></div>
-                                <div class="percentage-description">EMAIL MARKETING</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>  
-                <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="450" data-aos-once="false">
-                    <div class="box-piesite">
-                        <ul class="pie-list">
-                            <li class="design">
-                                <div class="piesite" id="pie_3" data-pie="80"></div>
-                                <div class="percentage-description">USER EXPERIENCE</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>  
-            </div>
-        </div>
-
-        <!-- Section 7 -->                        
-           <div class="section7 clearfix" id="section7">
-            <div class="bottom-gradient"></div>
-            <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
-                <div class="section7-header">
-                    <h1>KEEP IN <b><div class="line-break"></div><span>TOUCH</span><div class="line-break"></div></b> WITH ME</h1>
-                </div>
-                
-                <div class="section7-row">
-                    <div class="section7-row-item">        
-                        <p>If you would like to contact me, click the button below, call/email me directly and I will be happy to get back to you.</p>
-                    <a href="mailto:hopkins511@yahoo.com" class="form-button form-button1" style="margin-top:10px"><i class="fa fa-paper-plane"></i>Send Message</a> 
-                     <p>Robert Hopkins<br>hopkins511@yahoo.com<br>847.927.1395</p>
-                    </div>
-                </div>  
-                </div>       
-            </div>       
+    <footer>
+        <div class="container">
+        <p>&copy; Copyright <script>document.write(new Date().getFullYear())</script>. All rights are reserved.</p>
+    </div>
+    </footer>
+</body>
            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
            <script>
@@ -276,7 +290,33 @@
               loopCount: Infinity,
             });
           </script>
-           <script>AOS.init();</script>
-    </body>
-    <footer></footer>
+          <script>
+              var roles = ["Digital Designer.", "Web Developer.", "Graphic Designer.", "Front-End Developer."];
+
+                function rotateRoles() {
+                var ct = $(".role").data("role") || 0;
+                $(".role").data("role", ct == roles.length -1 ? 0 : ct + 1).text(roles[ct]).fadeIn()
+                    .delay(1500).fadeOut(500, rotateRoles);
+                }
+                $(rotateRoles);
+          </script>
+           <script>AOS.init();</script>  
+
+
+        <script>
+            $(document).ready(function() {
+            const menuBtn = $('.menu-button');
+            menuBtn.click(()=>{	
+                setTimeout(()=>{
+                removeHash();
+                }, 5);
+            });
+            
+            function removeHash(){
+                history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+            }
+            });
+        </script>
+    
+
   </html>
