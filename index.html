@@ -48,7 +48,7 @@
     </span>  
 <!-- Section 1 -->
     <div class="section1" id="section1">
-        <div class="topBar">
+        <div class="topBar js-top-bar">
             <div class="section-container">
                 <div class="logo">        
                     <h1>R<span class="divider-line">|</span>H</h1>
@@ -278,45 +278,19 @@
     </div>
     </footer>
 </body>
-           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-           <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-           <script>
-            var typed = new Typed('#typed', {
-              stringsElement: '#typed-strings',
-              typeSpeed: 23,
-              backSpeed: 23,
-              backDelay: 2000,
-              loop: true,
-              loopCount: Infinity,
-            });
-          </script>
-          <script>
-              var roles = ["Digital Designer.", "Web Developer.", "Graphic Designer.", "Front-End Developer."];
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 23,
+            backSpeed: 23,
+            backDelay: 2000,
+            loop: true,
+            loopCount: Infinity,
+        });
+    </script>
 
-                function rotateRoles() {
-                var ct = $(".role").data("role") || 0;
-                $(".role").data("role", ct == roles.length -1 ? 0 : ct + 1).text(roles[ct]).fadeIn()
-                    .delay(1500).fadeOut(500, rotateRoles);
-                }
-                $(rotateRoles);
-          </script>
-           <script>AOS.init();</script>  
+    <script>AOS.init();</script>  
 
-
-        <script>
-            $(document).ready(function() {
-            const menuBtn = $('.menu-button');
-            menuBtn.click(()=>{	
-                setTimeout(()=>{
-                removeHash();
-                }, 5);
-            });
-            
-            function removeHash(){
-                history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
-            }
-            });
-        </script>
-    
-
-  </html>
+</html>
