@@ -567,10 +567,12 @@ Navigation
 ---------------------- */
 
 .topBar {
-	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	padding-top: 1.25em;
     z-index: 5;
     position: relative;
+    width: 100%;
+    opacity: 1;
+    height: 87px;
 }
 
 .topBar h1 {
@@ -578,6 +580,10 @@ Navigation
     color: #fff;
     font-size: 1.8125rem;
     font-weight: 700;
+}
+
+.topBar.sticky-nav h1 {
+    color: #000;
 }
 
 .topBar span.divider-line {
@@ -617,6 +623,7 @@ nav a {
     font-size: 1.5em;
     padding: 15px 10px;
     color: #fff;
+    transition: 0.4s all ease;
 }
 
 .logo {
@@ -667,7 +674,7 @@ Media Queries
 @media (max-width: 1000px) {
 
     .topBar {
-        background-color: #fff;
+        background-color: #fff !important;
         height: 87px;
     }
 
@@ -760,9 +767,8 @@ Media Queries
     }
     
     ul.nav-list li a {
-        text-align: center;
         padding: 0px;
-        color: #0094cc;
+        color: #0094cc !important;
     }
     
     ul.nav-list li a:hover {
