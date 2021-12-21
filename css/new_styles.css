@@ -47,13 +47,13 @@ h2 {
 h3 {
 	font-size: 1.125rem;
 	color: #000;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 h4 {
 	font-size: 1rem;
 	color: #000;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 p {
@@ -796,6 +796,11 @@ Media Queries
         padding-bottom: 50px;
     }
 
+    .section3,
+    .section4 {
+        padding-top: 45px;
+    }
+
     .row1,
     .row2 {
         display: block;
@@ -811,6 +816,10 @@ Media Queries
 
     .section8-row-item {
         margin: 70px auto;
+    }
+
+    footer {
+        padding: 50px 20px 35px;
     }
 
 }
