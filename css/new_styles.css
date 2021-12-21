@@ -339,10 +339,16 @@ Section 2
 
 .section4-content .fas,
 .section4-content .far,
+.section4-content .fab,
 .text-col .fas,
+.text-col .fab,
 .text-col .far {
     color: #0094cc;
     margin-right: 8px;
+}
+
+.fa-phone {
+    transform: rotate(110deg);
 }
 
 .role {
