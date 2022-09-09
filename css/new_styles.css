@@ -406,6 +406,69 @@ Section 3
 }
 
 /* ----------------------
+Section 5
+---------------------- */
+
+.section5 {
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    transition: .3s ease;
+    background-color: #000;
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.portfolio-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 0.5;
+}
+
+.client-logo {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .3s ease;
+}
+
+.portfolio-item:hover .client-logo {
+    opacity: 0;
+}
+
+.portfolio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/* ----------------------
 Section 8
 ---------------------- */
 
@@ -867,6 +930,10 @@ Media Queries
         width: 50%;
         margin-bottom: 70px;
     }
+
+    .portfolio-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -881,5 +948,9 @@ Media Queries
 
     .thank-you-section {
         padding-top: 5px;
+    }
+
+    .portfolio-wrapper {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
