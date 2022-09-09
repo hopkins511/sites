@@ -834,6 +834,11 @@ Media Queries
     ul.nav-list li:nth-child(5) {
         transition-delay: 0.5s;
     }
+
+    ul.nav-list.show li:nth-child(6),
+    ul.nav-list li:nth-child(6) {
+        transition-delay: 0.6s;
+    }
     
     ul.nav-list li a {
         padding: 0px;
