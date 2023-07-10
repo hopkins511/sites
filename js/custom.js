@@ -36,7 +36,7 @@ $(document).ready(function() {
 	}
 });
 
-var roles = ["Digital Designer.", "Web Developer.", "Graphic Designer.", "Front-End Developer."];
+var roles = ["Senior Digital Designer.", "Web Developer.", "Graphic Designer.", "Front-End Developer."];
 
 function rotateRoles() {
 var ct = $(".role").data("role") || 0;
