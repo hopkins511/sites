@@ -10,221 +10,319 @@
     
     
     <!-- CSS -->
-    
-    <link rel="stylesheet" type="text/css" href="css/styles2.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" href="css/new_styles.css">
+    <link rel="stylesheet" type="text/css" href="css/pie_chart.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="project/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="project/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="project/img/favicon-96x96.png" sizes="96x96">
       
     <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/graph_animation.js"></script>
+    <script type="text/javascript" src="js/numscroller.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163606416-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-05NZE3KD83"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-163606416-1');
+      gtag('config', 'G-05NZE3KD83');
     </script>
-
-
-      
-    <!-- Smooth parallax scrolling -->  
-    <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (1000) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 1000, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-    </script>
-      
     
-  </head>    
-    <body>
+  </head>  
+
+<body>
+    <div id="overlayer"></div>
+    <span class="loader">
+        <span class="loader-inner"></span>
+    </span>  
 <!-- Section 1 -->
-    <div class="section1">
-        <div class="top-gradient"></div>
-        <div class="topBar">
-            <div class="logo">        
-                <h1>ROBERT HOPKINS</h1>
-                <h2>Front-End Web Developer & Designer</h2>
-            </div>        
-            <nav>
-                <ul>
-                    <li><a href="#section2">What I do</a></li>
-                    <li><a href="#section3">About Me</a></li>
-                    <li><a href="#section5">My Works</a></li>
-                    <li><a href="#section7">Contact Me</a></li> 
-                    <li><a href="project/Robert_Hopkins_resume.pdf" target="_blank">Resume</a></li> 
-                </ul>         
-            </nav>
-                <div id="i-nav" class="hamburger">
+    <div class="section1" id="section1">
+        <div class="topBar js-top-bar">
+            <div class="section-container">
+                <div class="logo">        
+                    <h1>R<span class="divider-line">|</span>H</h1>
+                </div>        
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="#section1" class="menu-button">Home</a></li>
+                        <li><a href="#section2" class="menu-button">About</a></li>
+                        <li><a href="#section3" class="menu-button">Services</a></li> 
+                        <li><a href="#section5" class="menu-button">Portfolio</a></li> 
+                        <li><a href="#section4" class="menu-button">Contact</a></li> 
+                        <li><a href="project/Robert_Hopkins_resume.pdf" target="_blank">Resume</a></li> 
+                    </ul>         
+                </nav>
+            </div>
+            <div id="i-nav" class="hamburger">
                 <span class="hamburger-bar hamburger-bar-top"></span>
                 <span class="hamburger-bar hamburger-bar-middle"></span>
                 <span class="hamburger-bar hamburger-bar-bottom"></span>
             </div>
         </div>
-        
-        <div class="designerBox clearfix">
-            <div class="box-text">		
-                <p><span>FRONT-END</br>WEB DEVELOPER</br></span> &</br> <span>DESIGNER</span></p>        
-            </div>	        
+
+        <div class="hero-container">
+            <div class="profile-pic">
+                <img src="project/img/about.jpg">
+            </div>
+            <h1>Robert<span>Hopkins</span></h1>
+            <div class="animated-text-container">
+                <span class="iam">I'm a </span>
+                <div id="typed-strings">
+                    <span>Senior Digital Designer</span>
+                    <span>Web Designer</span>
+                    <span>Graphic Designer</span>
+                    <span>Front-End Developer</span>
+                </div>
+                <span id="typed"></span>
+            </div>
         </div>
+
+        <div class="scroll-downs">
+            <div class="mousey">
+                <div class="scroller"></div>
+            </div>
+        </div>
+        <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;"  preload="auto"  id="myVideo">
+            <source src="project/bg_video2.mp4" type="video/mp4">
+        </video>
+        <div class="top-gradient"></div>
     </div>
 
 <!-- Section 2 -->
-    <div class="section2 clearfix" id="section2">
+    <div class="section2" id="section2">
         <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
-        <div class="section2-header">
-            <h1>THE <b><div class="line-break"></div><span>SERVICES</span></b><div class="line-break"></div> I OFFER</h1>
-        </div>      
-            <div class="row1">                  
-                
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section2-header">
+                            <h4 class="section-sub-header">Biography</h4>
+                            <h2 class="section-header">About Me</h2>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        <div class="section2-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="section2-header">
+                            <div class="image-col"><img src="project/img/about_img.jpg" /></div>
+                        </div> 
+                    </div>
+                    <div class="col-md-9">
+                        <div class="text-col">
+                            <h3>I'm Robert Hopkins and I'm a <span class="blue role">Senior Digital Designer</span></h3>
+                            <p>Hi! My name is Robert Hopkins and I am a Senior Digital Designer at AllCampus. AllCampus is ranked one of the top mid-size companies in Chicago. My primary roles at AllCampus include leading key projects, initiatives and client launches. Design and develop a wide range of collateral for leading universities such as microsites, landing pages, marketing/social media banners, email marketing, brochures and A/B testing. I have been in the web industry for 16 years. </p>
+                            <div class="row mt-4">
+                                <div class="col-lg-6">
+                                    <p><i class="fas fa-map-marker-alt"></i><strong>Location:</strong> Cary, Illinois USA</p>
+                                    <p><i class="fas fa-book-reader"></i><strong>Study:</strong> Northern Illinois University</p>
+                                    <p><i class="fas fa-graduation-cap"></i><strong>Degree:</strong> Bachelors Degree</p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <p><i class="fas fa-bowling-ball"></i><strong>Hobbies:</strong> Bowling, Working Out</p>
+                                    <p><i class="fas fa-envelope"></i><strong>Mail:</strong> <a href="mailto:hopkins511@yahoo.com">hopkins511@yahoo.com</a></p>
+                                    <p><i class="fab fa-linkedin"></i><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/robert-hopkins-ba79754/" target="_blank">LinkedIn Profile</a></p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section3 grey-section" id="section3">
+        <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section3-header">
+                            <h4 class="section-sub-header">Services</h4>
+                            <h2 class="section-header">Quality Services</h2>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        <div class="section3-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                    <div class="row1">                  
+                        <div class="row-item">
+                            <div class="service-icons">
+                                <i class="fas fa-code" aria-hidden="true"></i><h4>Programming</h4>
+                                <p>Expert in HTML, CSS, Less, Sass, Bootstrap and WordPress. Intermediate in JavaScript, jQuery and PHP.</p>
+                            </div>
+                        </div>  
                     <div class="row-item">
                         <div class="service-icons">
-                            <i class="fas fa-code" aria-hidden="true"></i><h1>PROGRAMMING</h1>
-                            <p>Expert in HTML, CSS, Less, Sass, Bootstrap. Intermediate in JavaScript, jQuery, PHP and WordPress.</p>
+                            <i class="fas fa-mouse-pointer"></i><h4>Software</h4>
+                            <p>Proficient in Adobe Creative Cloud including Photoshop, Illustrator, InDesign, Acrobat and Figma. Also, experienced in video development.</p>
                         </div>
-                    </div>  
-                 <div class="row-item">
-                    <div class="service-icons">
-                        <i class="fas fa-mouse-pointer"></i><h1>SOFTWARE</h1>
-                        <p>Proficient in Adobe Creative Cloud including Photoshop, Illustrator, InDesign and Acrobat.</p>
-                    </div>
-                </div>                     
-
-            </div>
-            <div class="row2">                             
-                   <div class="row-item">
+                    </div>                     
+    
+                </div>
+                <div class="row2">                             
+                        <div class="row-item">
+                            <div class="service-icons">
+                                <i class="fas fa-laptop"></i><h4>Web Design</h4>
+                                <p>16 years experienced with designing responsive websites, wireframing, design concepts and prototyping.</p>
+    
+                            </div>
+                        </div>                   
+    
+                    <div class="row-item">
                         <div class="service-icons">
-                            <i class="fas fa-laptop"></i><h1>WEB DESIGN</h1>
-                            <p>14 years experienced with designing responsive websites, wireframing, design concepts, prototyping.</p>
+                            <i class="fas fa-paper-plane"></i><h4>Email Marketing</h4>
+                            <p>Experienced with email marketing, marketing automation, content management and reporting.</p>
                         </div>
-                    </div>                   
-
-                <div class="row-item">
-                    <div class="service-icons">
-                        <i class="fas fa-envelope"></i><h1>EMAIL MARKETING</h1>
-                        <p>Experienced with email marketing, marketing automation, content management and reporting.</p>
                     </div>
                 </div>
+                <h4 class="mt-5 menu-button">Do you want to chat? <a href="#section4">Let's start now</a>.</h4>
+                </div> 
             </div> 
-            </div> 
-     </div>
-
-<!-- Section 3 -->
-    <div class="section3 clearfix" id="section3">
-        <div class="section3-row">
-            <div class="section3-row-item" data-aos="fade-right" data-aos-duration="3300" data-aos-once="false">
-                <img src="project/img/about.jpg">
-            </div>
-            <div class="section3-row-item" data-aos="fade-left" data-aos-duration="3300" data-aos-once="false">        
-                <h1>Hello, I am Robert Hopkins...</h1>
-                <p>I am Digital Designer at All Campus. All Campus is one of the top companies in Chicago. My primary roles at All Campus include designing and developing microsites, landing pages, marketing/social media banners, email marketing, brochures and A/B testing. I have been in the web industry for 14 years. Early in my career, I was the lead web designer and front-end developer for L2 Interactive which includes producing HTML, CSS, JavaScript, JQuery and content management for Corporate and Performing Arts clients.</p>
-                <button class="button button1"><a href="#section5">VIEW MY WORKS</a></button>
-            </div>
-        </div>        
-    </div>
-
-<!-- Section 4 -->
-        <div class="section4 clearfix">    
-            <div class="row1">
-                    <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="150" data-aos-once="false">
-                        <div class="chart-percentage hundred">
-                            <h1>100<span>%</span></h1>
-                        </div>
-                        <div class="percentage-description">WEB DESIGN</div>
-                    </div>  
-                    <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="250" data-aos-once="false">
-                        <div class="chart-percentage">
-                            <h1>80<span>%</span></h1>
-                        </div>
-                        <div class="percentage-description">WEB DEVELOPMENT</div>
-                    </div>
-
-                    <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="350" data-aos-once="false">
-                        <div class="chart-percentage">
-                            <h1>80<span>%</span></h1>
-                        </div>
-                        <div class="percentage-description">EMAIL MARKETING</div>
-                    </div>  
-                
-                    <div class="row-item-percent" data-aos="fade-up" data-aos-duration="3300" data-aos-delay="450" data-aos-once="false">
-                        <div class="chart-percentage">
-                            <h1>80<span>%</span></h1>
-                        </div>
-                        <div class="percentage-description">USER EXPERIENCE</div>
-                    </div>  
-            </div>
         </div>
+        </div>
+    </div>
+</div>
 
 <!-- Section 5 -->
-    <div class="section5 clearfix" id="section5">
-        <div class="section5-header">
-            <h1>THE <b><div class="line-break"></div><span>WORKS</span></b><div class="line-break"></div> I AM PROUD OF</h1>
+    <div class="section5" id="section5">
+        <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section5-header">
+                            <h4 class="section-sub-header">Portfolio</h4>
+                            <h2 class="section-header">Featured Works</h2>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        <div class="section5-content">
+            <div class="container">
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-item"><a href="portfolio_tulane.html"><div class="client-logo"><img src="project/img/tulane_logo.svg"></div><img src="project/img/portfolio_tulane.jpg" /><div class="overlay"></div></a></div>
+                    <div class="portfolio-item"><a href="portfolio_neu.html"><div class="client-logo"><img src="project/img/neu_logo.svg"></div><img src="project/img/portfolio_neu.jpg" /><div class="overlay"></div></a></div>
+                    <div class="portfolio-item"><a href="portfolio_uva.html"><div class="client-logo"><img src="project/img/logo_darden.svg"></div><img src="project/img/portfolio_uvadarden.jpg" /><div class="overlay"></div></a></div>
+                    <div class="portfolio-item"><a href="portfolio_ucla.html"><div class="client-logo"><img src="project/img/ucla2_logo.svg"></div><img src="project/img/portfolio_ucla.jpg" /><div class="overlay"></div></a></div>
+                    <div class="portfolio-item"><a href="portfolio_pace.html"><div class="client-logo"><img src="project/img/pace_logo.svg"></div><img src="project/img/portfolio_pace.jpg" /><div class="overlay"></div></a></div>
+                    <div class="portfolio-item"><a href="portfolio_vanderbilt.html"><div class="client-logo"><img src="project/img/vanderbilt_logo.svg"></div><img src="project/img/portfolio_vanderbilt.jpg" /><div class="overlay"></div></a></div>
+                    <div class="portfolio-item"><a href="portfolio_ucdavis.html"><div class="client-logo"><img src="project/img/ucdavis_logo.svg"></div><img src="project/img/portfolio_ucdavis.jpg" /><div class="overlay"></div></a></div>
+                    <div class="portfolio-item"><a href="portfolio_columbia.html"><div class="client-logo"><img src="project/img/columbia_logo.svg"></div><img src="project/img/portfolio_columbia.jpg" /><div class="overlay"></div></a></div>
+                    <div class="portfolio-item"><a href="portfolio_utk.html"><div class="client-logo"><img src="project/img/utk_logo.svg"></div><img src="project/img/portfolio_utk.jpg" /><div class="overlay"></div></a></div>
+                </div>
+            </div> 
+        </div>
         </div>
     </div>
-        
-        <!-- Section 6 - Gallery -->
-            <div class="section6">
-                <div class="gallery-row">
-                    <div class="gallery-row-item"><div class="site-description">L2 Interactive</div><a href="project/inside_l2.html"><img src="project/img/gallery_l2.jpg"></a></div> 
-                    <div class="gallery-row-item"><div class="site-description">San Francisco Ballet</div><a href="project/inside_sfb.html"><img src="project/img/gallery_sfb.jpg"></a></div>
-                    <div class="gallery-row-item"><div class="site-description">Santa Fe Opera</div><a href="project/inside_sfo.html"><img src="project/img/gallery_sfo.jpg"></a></div>
-                    <div class="gallery-row-item"><div class="site-description">Prospect2</div><a href="project/inside_prospect2.html"><img src="project/img/gallery_pro2.jpg"></a></div>
-                    <div class="gallery-row-item"><div class="site-description">Michigan Opera Theatre</div><a href="project/inside_mot.html"><img src="project/img/gallery_mot.jpg"></a></div>
-                    <div class="gallery-row-item"><div class="site-description">Armed Forces Vacation Club</div><a href="project/inside_afvc.html"><img src="project/img/gallery_afvc.jpg"></a></div> 
-					<div class="gallery-row-item"><div class="site-description">Woolly Mammoth</div><a href="project/inside_woolly.html"><img src="project/img/gallery_woolly.jpg"></a></div> 
-                    <div class="gallery-row-item"><div class="site-description">Wyndham Worldwide</div><a href="project/inside_wyndham.html"><img src="project/img/gallery_wyndham.jpg"></a></div>
-                    <div class="gallery-row-item"><div class="site-description">Marquette Companies</div><a href="project/inside_marquette.html"><img src="project/img/gallery_marquette.jpg"></a></div>
-                    <div class="gallery-row-item"><div class="site-description">Resort Vacation Certificates</div><a href="project/inside_rvc.html"><img src="project/img/gallery_rvc.jpg"></a></div>
-                    <div class="gallery-row-item"><div class="site-description">Strathmore</div><a href="project/inside_strathmore.html"><img src="project/img/gallery_strathmore.jpg"></a></div>
-                    <div class="gallery-row-item"><div class="site-description">Husky Rescue</div><a href="project/inside_huskyrescue.html"><img src="project/img/gallery_huskyrescue.jpg"></a></div>
-            </div>
-        </div> 
-
-        <!-- Section 7 -->                        
-           <div class="section7 clearfix" id="section7">
-            <div class="bottom-gradient"></div>
-            <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
-                <div class="section7-header">
-                    <h1>KEEP IN <b><div class="line-break"></div><span>TOUCH</span><div class="line-break"></div></b> WITH ME</h1>
+    
+<!-- Section 8 -->                        
+    <div class="section8" id="section8">
+        <div class="bottom-gradient"></div>
+        <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
+            <div class="section8-row">
+                <div class="section8-row-item">        
+                    <span class='numscroller' data-min='1' data-max='16' data-delay='1' data-increment='1'>16</span>
+                    <p>Years of Experience</p>
                 </div>
-                
-                <div class="section7-row">
-                    <div class="section7-row-item">        
-                        <p>If you would like to contact me, click the button below, call/email me directly and I will be happy to get back to you.</p>
-                     <form action="mailto:hopkins511@yahoo.com"><button class="form-button form-button1"><i class="fa fa-paper-plane"></i>Send Message</button></form>
-                     <p>Robert Hopkins<br>hopkins511@yahoo.com<br>847.927.1395</p>
-                    </div>
-                </div>  
-                </div>       
+                <div class="section8-row-item">        
+                    <span class='numscroller' data-min='1' data-max='122' data-delay='5' data-increment='5'>122</span>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="section8-row-item">        
+                    <span class='numscroller' data-min='1' data-max='4785' data-delay='5' data-increment='21'>4785</span>
+                    <p>Cups Of Coffee</p>
+                </div>
+                <div class="section8-row-item">        
+                    <span class='numscroller' data-min='1' data-max='19540' data-delay='5' data-increment='82'>19540</span>
+                    <p>Lines Of Code</p>
+                </div>
+            </div>  
             </div>       
-           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            <script>AOS.init();</script>       
+        </div>  
+            
+<!-- Section 4 -->
+    <div class="section4" id="section4">
+        <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section4-header">
+                            <h4 class="section-sub-header">Contact</h4>
+                            <h2 class="section-header">Get in Touch</h2>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        <div class="section4-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-last col-spacing">
+                        <p><i class="fas fa-envelope"></i><strong>Mail:</strong> <a href="mailto:hopkins511@yahoo.com">hopkins511@yahoo.com</a></p>
+                        <p><i class="fab fa-linkedin"></i><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/robert-hopkins-ba79754/" target="_blank">LinkedIn Profile</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i><strong>Location:</strong> Cary, Illinois USA</p>
+                    </div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="section4-header">
+                            <p>If you would like to contact me, fill out the form below, call/email me directly and I will be happy to get back to you.</p>
+                        </div>
+                        <form action="https://formsubmit.co/hopkins511@yahoo.com" method="POST">
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="Name" name="name" id="name" required>
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_captcha" value="true">
+                            <input type="hidden" name="_next" value="https://www.roberthopkinsdesign.com/thankyou.html">
+                            <label for="email">Email</label>
+                            <input type="text" placeholder="Email" name="email" id="email" required>
+                            <label for="message">Message</label>
+                            <textarea placeholder="Message" name="message" id="message" rows="10" cols="30" required></textarea>
+                            <button type="submit" class="form-button">Send Message</button>
+                        </form>
+                    </div>
 
-    </body>
-    <footer></footer>
-  </html>
+                </div>
+            </div> 
+        </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+        <p>&copy; Copyright <script>document.write(new Date().getFullYear())</script>. All rights are reserved.</p>
+    </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 23,
+            backSpeed: 23,
+            backDelay: 2000,
+            loop: true,
+            loopCount: Infinity,
+        });
+    </script>
+
+    <script>AOS.init();</script>  
+
+</html>
