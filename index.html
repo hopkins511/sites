@@ -313,20 +313,20 @@
         <div class="bottom-gradient"></div>
         <div data-aos="fade-up" data-aos-duration="3300" data-aos-once="false">
             <div class="section8-row">
-                <div class="section8-row-item">        
-                    <span class='numscroller' data-min='1' data-max='19' data-delay='1' data-increment='1'>19</span>
+                <div class="section8-row-item">
+                    <span class="numscroller counter" data-target="19">19</span>
                     <p>Years of Experience</p>
                 </div>
-                <div class="section8-row-item">        
-                    <span class='numscroller' data-min='1' data-max='122' data-delay='5' data-increment='5'>122</span>
+                <div class="section8-row-item">
+                    <span class="numscroller counter" data-target="130">130</span>
                     <p>Happy Clients</p>
                 </div>
-                <div class="section8-row-item">        
-                    <span class='numscroller' data-min='1' data-max='4785' data-delay='5' data-increment='21'>4785</span>
+                <div class="section8-row-item">    
+                    <span class="numscroller counter" data-target="4785">4,785</span>
                     <p>Cups Of Coffee</p>
                 </div>
-                <div class="section8-row-item">        
-                    <span class='numscroller' data-min='1' data-max='19540' data-delay='5' data-increment='82'>19540</span>
+                <div class="section8-row-item">
+                    <span class="numscroller counter" data-target="19540">19,540</span>
                     <p>Lines Of Code</p>
                 </div>
             </div>  
@@ -386,6 +386,31 @@
         });
     </script>
 
-    <script>AOS.init();</script>  
+    <script>AOS.init();</script>
+
+    <script>
+		function animateCount(el, target, duration = 1200) {
+		const start = performance.now();
+		function tick(now) {
+			const progress = Math.min((now - start) / duration, 1);
+			const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+			el.textContent = Math.round(eased * target).toLocaleString();
+			if (progress < 1) requestAnimationFrame(tick);
+		}
+		requestAnimationFrame(tick);
+		}
+
+		const counters = document.querySelectorAll('.counter');
+		const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+			animateCount(entry.target, Number(entry.target.dataset.target));
+			observer.unobserve(entry.target); // only once
+			}
+		});
+		}, { threshold: 0.6 });
+
+		counters.forEach(el => observer.observe(el));
+	</script>
 
 </html>
